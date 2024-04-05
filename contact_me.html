@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+   
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  header, footer {
+            background-color: black; /* Changed header and footer background to black */
+            padding: 20px;
+            text-align: center;
+            color: whitesmoke;
+        }
+        header ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        header li {
+            display: inline;
+            margin: 0 10px;
+        }
+        header a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        header ul, footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        header li, footer li {
+            display: inline;
+            margin: 0 10px;
+        }
+        footer ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        footer ul li a {
+            color: #fff;
+            
+            text-decoration: none;
+        }
+ 
+  .container {
+    display: flex;
+    width: 800px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  }
+  .form-container, .details-container {
+    flex: 1;
+    padding: 20px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #003f5c;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #001e2d;
+  }
+  .details-container {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-details {
+    margin-bottom: 20px;
+  }
+  .contact-details h3 {
+    margin-bottom: 10px;
+  }
+  footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black; /* Changed footer background to black */
+    color: whitesmoke; /* Changed footer text color to white */
+    padding: 20px;
+    text-align: center;
+  }
+   footer p {
+     margin: 0;
+ }
+</style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact_me.html">Contact me</a></li>
+        </ul>
+    </header>
+
+<div class="container">
+  <div class="form-container">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message">
+    </form>
+  </div>
+  <div class="details-container">
+    <div class="contact-details">
+      <h3>Email</h3>
+      <p><a href="#">lizbethmokgala@gmail.com</a></p>
+    </div>
+    <div class="contact-details">
+      <h3>Phone</h3>
+      <p><a href="#">+27 78 218 9585</a></p>
+    </div>
+   
+  </div>
+</div>
+<footer>
+    <ul>
+      <li><a href="www.linkedin.com/in/lizbeth-mokgala-14a3b5275">LinkedIn</a></li>
+      <li><a href="lizbethmokgala@gmail.com">Email</a></li>
+    </ul>
+    <p>&copy; 2024 Lizbeth Mokgala | All rights reserved</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lizbeth Mokgala - Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke; /* Changed background to white */
+            color: black; /* Changed text color to black */
+        }
+        header, footer {
+            background-color: black; /* Changed header and footer background to black */
+            padding: 20px;
+            text-align: center;
+            color: whitesmoke;
+        }
+        header ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        header li {
+            display: inline;
+            margin: 0 10px;
+        }
+        header a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        header ul, footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        header li, footer li {
+            display: inline;
+            margin: 0 10px;
+        }
+        footer ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        footer ul li a {
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .intro {
+            width: 45%;
+            padding-right: 20px;
+        }
+        .intro h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .intro p {
+            font-size: 18px;
+        }
+        .intro button {
+            padding: 10px 20px;
+            background-color: black;
+            color: whitesmoke;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .image-container {
+            width: 45%;
+            position: relative;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .image-container .cutout {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 90%;
+            clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 20% 100%);
+        }
+        .lizzy{
+            mix-blend-mode: multiply;
+            filter: contrast(1);
+        }
+        footer{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: black; /* Changed footer background to black */
+            color: whitesmoke; /* Changed footer text color to white */
+            padding: 10px 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact_me.html">Contact me</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h1>Lizbeth Mokgala</h1>
+            <p>Welcome to my homepage!</p>
+            <a href="lizbeth.pdf"><button>Download CV</button></a>
+        </div>
+        <div class="image-container">
+            <img src="beauty.jpeg" alt="Lizbeth Mokgala" class="lizzy">
+         
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="www.linkedin.com/in/lizbeth-mokgala-14a3b5275">LinkedIn</a></li>
+            <li><a href="lizbethmokgala@gmail.com">Email</a></li>
+        </ul>
+        <p>&copy; 2024 Lizbeth Mokgala | All rights reserved</p>
+    </footer>
+</body>
+</html>
